@@ -10,6 +10,7 @@ li{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 
@@ -17,6 +18,7 @@ a{
     --body-bg:black;
     --nav-text-fz:18px;
     --nav-item-bg:rgba(128, 128, 128, 0.187);
+    --more-item-bg:rgb(38, 38, 38);
 }
 
 body{
@@ -32,7 +34,7 @@ body{
     top: 0;
     width: 250px;
     height: 100%;
-    border-right: 1px solid gray;
+    border-right: 1px solid var(--more-item-bg);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -55,7 +57,7 @@ body{
     align-items: center;
     transition: all 0.2s;
 }
-.nav-item:hover{
+.bg-hover:hover{
     background-color: var(--nav-item-bg) !important;
     cursor: pointer;
     transition: all 0.3s;
@@ -111,7 +113,39 @@ body{
 #nav #nav-more-btn{
     background-color: transparent;
     border: none;
+    position: relative;
 }
+#nav #nav-more-btn:focus > #more-items{
+    display: flex;
+}
+
+#nav-more-btn  #more-items{
+    position: absolute;
+    left: 0;
+    bottom: 110%;
+    width: 240px;
+    height: 320px;
+    border-radius: 10px;
+    background-color: var(--more-item-bg);
+    display: none;
+    flex-direction: column;
+    transition: all 1s;
+}
+a.bg-hover  > button {
+    background-color: none;
+}
+#more-items a{
+    font-size: 0.9rem;
+    margin: auto;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
 #nav #nav-more-btn i{
     
 }
