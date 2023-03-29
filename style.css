@@ -57,6 +57,9 @@ body{
     align-items: center;
     transition: all 0.2s;
 }
+#nav a i.fa-instagram{
+    display: none;
+}
 .bg-hover:hover{
     background-color: var(--nav-item-bg) !important;
     cursor: pointer;
@@ -85,11 +88,13 @@ body{
 
 #nav #nav-links .item{
     margin: 10px 0;
+  
 }
 
 #nav #nav-links .item .link{
     width: 100%;
     color: #fff;
+  
 }
 
 #nav #nav-links .item .link i{
@@ -117,6 +122,7 @@ nav .fa-heart::after{
 }
 #nav #nav-more-btn:focus > #more-items{
     display: flex;
+    z-index: 10;
 }
 
 #nav-more-btn  #more-items{
@@ -159,6 +165,7 @@ a.bg-hover  > button {
     right: 3%;
     top: 4%;
     display: flex;
+    z-index: 5;
 }
 
 #main #explore{
