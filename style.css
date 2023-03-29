@@ -24,7 +24,7 @@ a{
 body{
     width: 100vw;
     min-height: 100vh;
-    overflow-y: hidden;
+    overflow-x: hidden;
     background-color: var(--body-bg);
 }
 
@@ -96,10 +96,10 @@ body{
     
 }
 
-.fa-heart{
+nav .fa-heart{
     position: relative;
 }
-.fa-heart::after{
+nav .fa-heart::after{
     content: "";
     position: absolute;
     top: 0;
@@ -149,3 +149,93 @@ a.bg-hover  > button {
 #nav #nav-more-btn i{
     
 }
+
+
+/*--------MAIN EXPLORE*/
+#main{
+    width: 76vw;
+    min-height: 100%;
+    position: absolute;
+    right: 3%;
+    top: 4%;
+    display: flex;
+}
+
+#main #explore{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#main #explore .explore-row{
+    display: flex;
+}
+
+.img-left{
+    flex-direction: row-reverse;
+}
+
+#main #explore .explore-row .video{
+    
+}
+
+
+#main #explore .explore-row .video .item img{
+   width: 340px;
+   height:680px;
+}
+
+#explore .item{
+    margin:2px;
+    cursor: pointer;
+    position: relative;
+}
+
+#explore .item .post-info{
+    z-index: 10;
+    color: white;
+    position: absolute;    
+    top: 50%;
+    left: 30%;
+    align-items: center;
+    align-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: none;
+}
+
+#explore .item .post-info .line,.comments{
+    margin: 0 30px;
+    text-align: center;
+}
+
+#explore .item img{
+  
+}
+
+#explore .item:hover::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--nav-item-bg);
+}
+
+#explore .item:hover > .post-info{
+    display: flex;
+}
+
+#main #explore .explore-row .image-posts{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+#main #explore .explore-row .image-posts .item img{
+    width: 340px;
+    height: 340px;
+}
+
