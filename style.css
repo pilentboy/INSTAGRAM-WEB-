@@ -79,7 +79,7 @@ body{
 
 /*nav links*/
 .mr-6{
-    margin-right: 15px !important;
+    margin-right: 10px !important;
 }
 
 #nav #nav-links{
@@ -97,10 +97,15 @@ body{
   
 }
 
-#nav #nav-links .item .link i{
+.item .link i{
     
 }
-
+nav span{
+    margin-left: 5px;
+}
+#nav-more-btn span{
+    margin-left: 20px;
+}
 nav .fa-heart{
     position: relative;
 }
@@ -122,7 +127,7 @@ nav .fa-heart::after{
 }
 #nav #nav-more-btn:focus > #more-items{
     display: flex;
-    z-index: 10;
+   
 }
 
 #nav-more-btn  #more-items{
@@ -136,6 +141,7 @@ nav .fa-heart::after{
     display: none;
     flex-direction: column;
     transition: all 1s;
+
 }
 a.bg-hover  > button {
     background-color: none;
@@ -165,7 +171,7 @@ a.bg-hover  > button {
     right: 3%;
     top: 4%;
     display: flex;
-    z-index: 5;
+   
 }
 
 #main #explore{
@@ -183,15 +189,7 @@ a.bg-hover  > button {
     flex-direction: row-reverse;
 }
 
-#main #explore .explore-row .video{
-    
-}
 
-
-#main #explore .explore-row .video .item img{
-   width: 340px;
-   height:680px;
-}
 
 #explore .item{
     margin:2px;
@@ -237,12 +235,16 @@ a.bg-hover  > button {
 
 #main #explore .explore-row .image-posts{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 70%;
+    justify-content: space-evenly;
+ 
+    width: 90%;
 }
 
-#main #explore .explore-row .image-posts .item img{
-    width: 340px;
-    height: 340px;
+
+.image-posts .item img{
+    width: 300px;
+    height: 300px;
 }
 
