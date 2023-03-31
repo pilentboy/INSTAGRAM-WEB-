@@ -171,9 +171,17 @@ a.bg-hover  > button {
     right: 3%;
     top: 4%;
     display: flex;
-   
+    overflow-x:hidden;
+    
 }
-
+#main::-webkit-scrollbar {
+    display: none;
+}
+#main{
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+  
 #main #explore{
     width: 100%;
     height: 100%;
