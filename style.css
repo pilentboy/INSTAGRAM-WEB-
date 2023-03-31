@@ -174,13 +174,15 @@ a.bg-hover  > button {
     overflow-x:hidden;
     
 }
+
 #main::-webkit-scrollbar {
     display: none;
 }
+
 #main{
     -ms-overflow-style: none; 
     scrollbar-width: none; 
-  }
+}
   
 #main #explore{
     width: 100%;
